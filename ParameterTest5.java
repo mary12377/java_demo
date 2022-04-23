@@ -39,7 +39,7 @@ public class ParameterTest5 {
         $("#permanentAddress").setValue("Address 789630");
         $("#submit").click();
         $("[class='border col-md-12 col-sm-12']").shouldHave(
-                text("testData"),
+                text(testData),
                 text("bulaneva@mail.ru"),
                 text("Address test"),
                 text ("Address 458"));

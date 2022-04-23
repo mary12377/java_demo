@@ -26,7 +26,10 @@ public class ParameterTest5 {
 
     }
 
-    @ValueSource(strings = {"Mary"})
+    @ValueSource(strings = {
+            "Mary",
+            "Angry"
+    })
     @ParameterizedTest(name = "Заполнение формы {0}")
     void loginTextBox(String testData) {
         Selenide.open("https://demoqa.com/text-box");
